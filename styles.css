@@ -1,0 +1,289 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://cdn.b12.io/media/87c2c0f6-ecb7-11ec-a54d-0242ac110002-Family_of_four_EveryPixel.com.jpg') no-repeat center center/cover;
+    color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-btn:hover {
+    background-color: #ff3e30;
+}
+
+/* Content Sections */
+.content-section {
+    background: white;
+    padding: 40px 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #50b3a2;
+    font-size: 2em;
+}
+
+.content-section p, .content-section ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.content-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-section ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.content-section ul li:before {
+    content: "\f058";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    color: #50b3a2;
+}
+
+/* Overview Section */
+#overview .left, #overview .right {
+    width: 48%;
+}
+
+#overview .left {
+    float: left;
+}
+
+#overview .right {
+    float: right;
+    text-align: center;
+}
+
+#overview img {
+    width: 100%;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Importance Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.feature {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.feature i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #50b3a2;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Timeline Section */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-left: 4px solid #50b3a2;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 48%;
+    animation: slideInLeft 0.7s ease-in-out;
+}
+
+/* Split Section */
+.split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.split .left, .split .right {
+    width: 48%;
+}
+
+.split img {
+    width: 100%;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+/* FAQ Section */
+.accordion-item {
+    margin-bottom: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+.accordion-item h3 {
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+    background: #50b3a2;
+    color: white;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background: #50b3a2;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.call-to-action .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.call-to-action .btn:hover {
+    background-color: #ff3e30;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .timeline-item {
+        width: 100%;
+    }
+
+    .split {
+        flex-direction: column;
+    }
+
+    #overview .left, #overview .right {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
